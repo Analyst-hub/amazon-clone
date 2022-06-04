@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './Components/js/Header';
+import Home from './Components/js/Home';
 
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
           <Route 
             exact path="/" 
             element={<>
-              <h1> Home Page Fuckers </h1>
-              <Header/>  
+              <Header/>
+              <Home/>
+              <h1> Home Page Fuckers </h1>  
             </>}
           />
           <Route
@@ -24,6 +26,7 @@ function App() {
           <Route 
             path='/checkout'
             element={<>
+              <Header/>
               <h1>Get the fuck out dude</h1>
             </>}
           />
